@@ -1,10 +1,11 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
+import Header from './Component/Header'
 
 const App = () => {
   return (
     <>
-      <h1>My App</h1>
+      <Header />
       <Outlet />
       <h1>Footer</h1>
     </>
