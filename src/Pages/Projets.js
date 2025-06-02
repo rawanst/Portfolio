@@ -1,16 +1,17 @@
 import {
-  Container
-} from "@mui/material"
+  Box,
+} from '@mui/material'
+import FrontPage from '../Component/FrontPage'
 
 const Projets = () => {
   return(
-    <Container
-      sx={{ border : '1px solid blue' }}
-    >
-      <h1>
-        Projets
-      </h1>
-    </Container>
+    <Box>
+      <FrontPage 
+        height='55vh'
+        title='Projets'
+        content='Passionné par la tech, je transforme les défis en solutions innovantes. Découvrez mon parcours et mes réalisations.'
+      />
+    </Box>
   )
 }
 

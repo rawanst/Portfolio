@@ -1,16 +1,16 @@
 import {
-  Container
-} from "@mui/material"
+  Box,
+} from '@mui/material'
+import FrontPage from '../Component/FrontPage'
 
 const ComingSoon = () => {
   return(
-    <Container
-      sx={{ border : '1px solid blue' }}
-    >
-      <h1>
-        ComingSoon
-      </h1>
-    </Container>
+    <Box>
+      <FrontPage 
+        height='55vh'
+        title='Coming Soon'
+      />
+    </Box>
   )
 }
 
