@@ -2,7 +2,7 @@ import './App.css'
 import { Outlet } from 'react-router-dom'
 import {
   Box
-} from "@mui/material"
+} from '@mui/material'
 import Header from './Component/Header'
 
 const App = () => {
@@ -10,13 +10,11 @@ const App = () => {
     <>
       <Header />
       <Box
-        mt= '8.5vh'
-        mx= '-0.9vh'
-        sx={{ border : '1px solid red' }}
+        mt= '5vh'
+        mx= '-1vh'
       >
         <Outlet />
       </Box>
-      <h1>Footer</h1>
     </>
   )
 }

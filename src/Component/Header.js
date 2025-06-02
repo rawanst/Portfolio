@@ -1,12 +1,11 @@
-import React from 'react'
 import {
   Button,
   AppBar,
   Toolbar,
   useScrollTrigger,
   Slide
-} from "@mui/material"
-import { useNavigate } from "react-router-dom"
+} from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 function HideOnScroll(props) {

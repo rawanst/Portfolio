@@ -1,16 +1,17 @@
 import {
-  Container
-} from "@mui/material"
+  Box,
+} from '@mui/material'
+import FrontPage from '../Component/FrontPage'
 
 const NotFound = () => {
   return(
-    <Container
-      sx={{ border : '1px solid blue' }}
-    >
-      <h1>
-        NotFound
-      </h1>
-    </Container>
+    <Box>
+      <FrontPage 
+        height='55vh'
+        title='Not Found'
+        content="Cette page n'existe pas"
+      />
+    </Box>
   )
 }
 
