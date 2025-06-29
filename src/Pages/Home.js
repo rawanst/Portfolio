@@ -3,6 +3,7 @@ import {
   Box,
 } from '@mui/material'
 import FrontPage from '../Component/FrontPage'
+import HomeSection from '../Component/HomeSection'
 
 const Home = () => {
 
@@ -43,6 +44,22 @@ const Home = () => {
         content={data.frontData.content}
         isHomePage={1}
         links={data.links}
+      />
+      <HomeSection 
+        title='Home Section'
+        routh=''
+        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        listOfList={[
+          { id: 1, name: 'Programmation', list: ['React', 'C# .Net'] },
+          { id: 2, name: 'Base de données', list: ['MSSMSQL'] },
+          { id: 4, name: 'Langue', list: ['Français Native', 'Anglais TOEIC B2'] },
+          { id: 3, name: 'Outils', list: ['GitHub', 'Fork', 'Postman'] },
+        ]}
+        isCV={true}
+        summaries={[
+          { id: 1, routh: '/projets', title: 'Titre', resume: 'une courte description'},
+          { id: 2, routh: '/projets', title: 'Titre 2', resume: 'une autre courte description'},
+        ]}
       />
     </Box>
   )
