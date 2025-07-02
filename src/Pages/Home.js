@@ -3,6 +3,7 @@ import {
   Box,
 } from '@mui/material'
 import FrontPage from '../Component/FrontPage'
+import HomeSection from '../Component/HomeSection'
 
 const Home = () => {
 
@@ -32,6 +33,63 @@ const Home = () => {
         url: 'mailto:rawantabaja12@gmail.com?cc=&subject=Hello world !&body=Bonjour Rawan,'
       },
     ],
+    homeSections: [
+      {
+        title:'À Propos',
+        routh:'/',
+        desc:"Développeuse web full-stack diplômée d’un Master en développement informatique, je suis passionnée par la conception de solutions innovantes. Mon expertise en React.js pour le front-end, et en C# .NET pour le back-end, me permet d’aborder des projets complexes avec efficacité. Dotée d’une forte capacité d’adaptation, je cherche à intégrer une équipe dynamique où je pourrai contribuer à des projets ambitieux tout en continuant à développer mes compétences techniques.",
+        listOfList:[
+          { id: 1, name: 'Programmation', list: ['React', 'C# .Net'] },
+          { id: 2, name: 'Base de données', list: ['MSSMSQL'] },
+          { id: 4, name: 'Langue', list: ['Français Native', 'Anglais TOEIC B2'] },
+          { id: 3, name: 'Outils', list: ['GitHub', 'Fork', 'Postman'] },
+        ],
+        isCV:true,
+      },
+      {
+        title:'Projets',
+        routh:'/projets',
+        summaries:[
+          { 
+            id: 1, 
+            routh: '/projets', 
+            title: 'Projet 1', 
+            resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+          },
+          { 
+            id: 2, 
+            routh: '/projets', 
+            title: 'Projet 2', 
+            resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+          },
+          { 
+            id: 3, 
+            routh: '/projets', 
+            title: 'Projet 3', 
+            resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+
+          },
+        ],
+      },
+      {
+        title:'Blog',
+        routh:'/blog',
+        summaries:[
+          { 
+            id: 1, 
+            routh: '/blog', 
+            title: 'React server composant', 
+            resume: "Réinventez vos applications web avec les composants serveur React : performance, rapidité et efficacité au cœur de Next.js !"
+          },
+          { 
+            id: 2, 
+            routh: '/blog', 
+            title: 'Advent of code', 
+            resume: "Plongez dans l’Advent of Code, le défi ultime des développeurs pour allier logique, algorithmes et esprit de Noël !"
+          },
+        ],
+      }
+    ]
   }
 
   return(
@@ -44,6 +102,17 @@ const Home = () => {
         isHomePage={1}
         links={data.links}
       />
+      {data.homeSections.map((item, id) => (
+        <HomeSection
+          id={id}
+          title={item.title}
+          routh={item.routh}
+          desc={item.desc ? item.desc : null}
+          listOfList={item.listOfList ? item.listOfList : null}
+          isCV={item.isCV ? true : false}
+          summaries={item.summaries ? item.summaries : null}
+        />
+      ))}
     </Box>
   )
 }
