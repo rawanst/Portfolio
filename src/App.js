@@ -4,6 +4,7 @@ import {
   Box
 } from '@mui/material'
 import Header from './Component/Header'
+import Footer from './Component/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       >
         <Outlet />
       </Box>
+      <Footer />
     </>
   )
 }
