@@ -19,8 +19,8 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
   return(
     <Box
       m= '0'
-      p= '2vh'
-      py= '5vh'
+      px= '2vh'
+      pt= '5vh'
     >
       <Container
         maxWidth='lg'
