@@ -65,7 +65,7 @@ const Header = (props) => {
                 fontWeight: 'bolder',
                 color: '#b9cb3c',
                 fontSize: '1.8rem',
-                textTransform: 'lowercase',
+                textTransform: 'none',
                 textShadow: '1px 0px white',
                 letterSpacing : '-3px',
                 ':hover': { 
@@ -74,7 +74,7 @@ const Header = (props) => {
                 }
               }}
             >
-              rawanst
+              Rawan T.
             </Button>
           </Toolbar>
           <Toolbar>
