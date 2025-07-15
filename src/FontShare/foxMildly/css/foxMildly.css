@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'FoxMildlyRegular';
+  src: url('../fonts/FoxMildlyRegular.woff2') format('woff2'),
+       url('../fonts/FoxMildlyRegular.woff') format('woff'),
+       url('../fonts/FoxMildlyRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+

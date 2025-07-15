@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Aestera-Italic';
+  src: url('../fonts/Aestera-Italic.woff2') format('woff2'),
+       url('../fonts/Aestera-Italic.woff') format('woff'),
+       url('../fonts/Aestera-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
