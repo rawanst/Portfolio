@@ -2,11 +2,9 @@ import {
   Box,
   Container,
   Typography,
-  Divider,
-  Chip,
-  Grid,
 } from '@mui/material'
 import ItemLink from './ItemLink'
+import MyDivider from './MyDivider'
 
 const FrontPage = ({
   title, 
@@ -16,7 +14,6 @@ const FrontPage = ({
   links, 
   height
 }) => {
-
   return(
     <Box
       bgcolor= '#823ccbff'
@@ -31,58 +28,56 @@ const FrontPage = ({
           alignItems: 'center',
           alignContent: 'center',
         }}
+        size={{
+          xs: 12,
+          sm: 12,
+          md: 7,
+          lg: 7,
+        }}
       >
-        <Grid container spacing={2}>
-          <Grid 
-            size={{
-              xs: 12,
-              sm: 12,
-              md: 7,
-              lg: 7,
+        <Typography
+          variant= 'h2'
+          sx={{
+            fontFamily: "Meloriac-Regular",
+            color: '#b9cb3c',
+            textShadow: '1.8px 0px white',
+            wordWrap: 'break-word',
+            paddingTop: '2vh',
+          }}
+        >
+          {title}
+        </Typography>
+        {
+          titleDeux && 
+          <Typography
+            variant= 'h2'
+            sx={{
+              fontFamily: 'Melodrama-Light', 
+              color: '#b9cb3c',
+              wordWrap: 'break-word'
             }}
           >
-            <Typography
-              variant= 'h2'
-              sx={{
-                fontFamily: "Meloriac-Regular",
-                color: '#b9cb3c',
-                textShadow: '1.8px 0px white',
-                wordWrap: 'break-word',
-                paddingTop: '2vh',
-              }}
-            >
-              {title}
-            </Typography>
-            
-            {titleDeux && 
-              <Typography
-              variant= 'h2'
-              sx={{
-                fontFamily: 'Melodrama-Light', 
-                color: '#b9cb3c',
-                wordWrap: 'break-word'
-              }}
-              >
-                {titleDeux}
-              </Typography>
-            }
-
-            <Divider sx={{bgcolor:'#c2cf69', opacity: '0.4'}}/>
-            <Typography 
-              variant= 'h5'
-              sx={{
-                fontFamily: "Melodrama-Light", 
-                color: '#c2cf69',
-                wordWrap: 'break-word'
-              }}
-            >
-              {content}
-            </Typography>
-            {isHomePage && links && links.map(link => 
-              <ItemLink link={link}/>
-            )}
-          </Grid>
-        </Grid>
+            {titleDeux}
+          </Typography>
+        }
+        <MyDivider/>
+        <Typography 
+          variant= 'h5'
+          sx={{
+            fontFamily: "Melodrama-Light", 
+            color: '#c2cf69',
+            wordWrap: 'break-word'
+          }}
+        >
+          {content}
+        </Typography>
+        {
+          isHomePage && 
+          links && 
+          links.map(link => 
+            <ItemLink link={link}/>
+          )
+        }
       </Container>
     </Box>
   )
