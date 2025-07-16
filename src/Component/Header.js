@@ -3,7 +3,7 @@ import {
   AppBar,
   Toolbar,
   useScrollTrigger,
-  Slide
+  Slide,
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
@@ -57,7 +57,7 @@ const Header = (props) => {
           }}
         >
           <Toolbar>
-            <Button 
+            <Button
               size='large'
               onClick={() => { navigate('/') }}
               sx={{
@@ -68,8 +68,8 @@ const Header = (props) => {
                 textTransform: 'none',
                 textShadow: '1px 0px white',
                 letterSpacing : '-3px',
-                ':hover': { 
-                  color: '#e8e3edff', 
+                ':hover': {
+                  color: '#e8e3edff',
                   transitionProperty: 'none'
                 }
               }}
@@ -78,7 +78,7 @@ const Header = (props) => {
             </Button>
           </Toolbar>
           <Toolbar>
-            {menu.map(item => 
+            {menu.map(item =>
               <Button
                 key={item.id}
                 size= 'large'
@@ -88,7 +88,7 @@ const Header = (props) => {
                   fontFamily: 'Melodrama-Regular',
                   m: 0.25,
                   letterSpacing : '-1px',
-                  ':hover': { 
+                  ':hover': {
                     textShadow: '0.5px 0px white',
                     color: '#e8e3edff',
                     transitionProperty: 'none'

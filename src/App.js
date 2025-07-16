@@ -10,9 +10,12 @@ const App = () => {
   return (
     <>
       <Header />
-      <Box
-        mt= '5vh'
-        mx= '-1vh'
+      <Box 
+        sx={{
+          position: 'relative',
+          left: '-7.62px',
+          marginRight: '-16.012px',
+        }}
       >
         <Outlet />
       </Box>
