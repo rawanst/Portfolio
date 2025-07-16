@@ -1,7 +1,3 @@
-import {
-  Container,
-  Box,
-} from '@mui/material'
 import FrontPage from '../Component/FrontPage'
 import HomeSection from '../Component/HomeSection'
 
@@ -93,7 +89,7 @@ const Home = () => {
   }
 
   return(
-    <Box>
+    <>
       <FrontPage
         height='90vh'
         title={data.frontData.title}
@@ -113,7 +109,7 @@ const Home = () => {
           summaries={item.summaries ? item.summaries : null}
         />
       ))}
-    </Box>
+    </>
   )
 }
 

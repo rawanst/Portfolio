@@ -17,24 +17,17 @@ const FrontPage = ({
   return(
     <Box
       bgcolor= '#823ccbff'
+      sx={{
+        height: {height},
+        diplay: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignContent: 'center',
+      }}
     >
-      <Container
-        sx={{
-          height: {height},
-          diplay: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          alignItems: 'center',
-          alignContent: 'center',
-        }}
-        size={{
-          xs: 12,
-          sm: 12,
-          md: 7,
-          lg: 7,
-        }}
-      >
+      <Container>
         <Typography
           variant= 'h2'
           sx={{
