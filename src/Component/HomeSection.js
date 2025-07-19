@@ -119,8 +119,8 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
                 justifyContent: 'center',
               }}
             >
-              {summaries.map((item) => (
-                <RedirectLink data={item} isShortCut={true}/>
+              {summaries.map((item, key) => (
+                <RedirectLink key={key} data={item} />
               ))}
             </Grid>
           }

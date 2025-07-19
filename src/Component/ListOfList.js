@@ -22,7 +22,7 @@ const ListOfList = ({data}) => {
         justifyContent: 'space-around',
       }}
     >
-      {data.map((i) => (
+      {data.map(i => (
         <
           Grid
           key={i.id}
@@ -45,6 +45,7 @@ const ListOfList = ({data}) => {
           </Typography>
           {i.list.map((x) => (
             <Typography
+              key={x.id}
               variant= 'p'
               sx={{
                 fontFamily: "Melodrama-Light",
@@ -52,7 +53,7 @@ const ListOfList = ({data}) => {
                 wordWrap: 'break-word',
               }}
             >
-              ¤ {x}
+              ¤ {x.name}
             </Typography>
           ))}
         </Grid>

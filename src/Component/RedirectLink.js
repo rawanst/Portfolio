@@ -4,7 +4,7 @@ import {
 } from '@mui/material'
 import { useNavigate } from "react-router-dom"
 
-const RedirectLink = ({data, isShortCut}) => {
+const RedirectLink = ({data}) => {
 
   const navigate = useNavigate()
 
@@ -15,10 +15,10 @@ const RedirectLink = ({data, isShortCut}) => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
-        minWidth: isShortCut ? '1vw' : '90vw',
+        minWidth: '1vw',
         p: 3,
         pl: 2,
-        mb: '2%',
+        mb: 1,
         bgcolor: 'rgb(221, 201, 237)',
         cursor: 'pointer',
         border: '0.2vh solid #823ccbff',

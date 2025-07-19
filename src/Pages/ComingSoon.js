@@ -4,11 +4,20 @@ import {
 import FrontPage from '../Component/FrontPage'
 
 const ComingSoon = () => {
+
+  window.scrollTo(0, 0)
+  
   return(
     <Box>
       <FrontPage 
         height='55vh'
         title='Coming Soon'
+      />
+      <Box 
+        sx={{
+          width: '10%',
+          height: '34vh',
+        }}
       />
     </Box>
   )
