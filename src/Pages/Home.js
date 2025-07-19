@@ -35,10 +35,34 @@ const Home = () => {
         routh:'/',
         desc:"Développeuse web full-stack diplômée d’un Master en développement informatique, je suis passionnée par la conception de solutions innovantes. Mon expertise en React.js pour le front-end, et en C# .NET pour le back-end, me permet d’aborder des projets complexes avec efficacité. Dotée d’une forte capacité d’adaptation, je cherche à intégrer une équipe dynamique où je pourrai contribuer à des projets ambitieux tout en continuant à développer mes compétences techniques.",
         listOfList:[
-          { id: 1, name: 'Programmation', list: ['React', 'C# .Net'] },
-          { id: 2, name: 'Base de données', list: ['MSSMSQL'] },
-          { id: 4, name: 'Langue', list: ['Français Native', 'Anglais TOEIC B2'] },
-          { id: 3, name: 'Outils', list: ['GitHub', 'Fork', 'Postman'] },
+          { 
+            id: 1, 
+            name: 'Programmation', 
+            list: [
+              {id: '11', name: 'React'}, 
+              {id: '12', name:'C# .Net'}
+            ] 
+          },
+          { 
+            id: 2, 
+            name: 'Base de données', 
+            list: [{id:'21', name:'MSSMSQL'}] },
+          { 
+            id: 4, 
+            name: 'Langue', 
+            list: [
+              {id:'41', name:'Français Native'}, 
+              {id:'42', name:'Anglais TOEIC B2'}] 
+          },
+          { 
+            id: 3, 
+            name: 'Outils', 
+            list: [
+              {id:'31', name:'GitHub'}, 
+              {id:'32', name:'Fork'}, 
+              {id:'33', name:'Postman'}
+            ]
+          },
         ],
         isCV:true,
       },
@@ -100,6 +124,7 @@ const Home = () => {
       />
       {data.homeSections.map((item, id) => (
         <HomeSection
+          key={id}
           id={id}
           title={item.title}
           routh={item.routh}
