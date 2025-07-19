@@ -6,6 +6,9 @@ import FrontPage from '../Component/FrontPage'
 import RedirectLink from '../Component/RedirectLink'
 
 const Blog = () => {
+
+  window.scrollTo(0, 0)
+  
   const articles = [
           { 
             id: 1, 

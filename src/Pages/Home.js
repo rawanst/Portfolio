@@ -3,6 +3,8 @@ import HomeSection from '../Component/HomeSection'
 
 const Home = () => {
 
+  window.scrollTo(0, 0)
+  
   const data = {
     frontData: {
       title:'Rawan Tabaja',
