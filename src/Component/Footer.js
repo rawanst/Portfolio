@@ -77,8 +77,8 @@ const Footer = () => {
 
             }}
           >
-            {links && links.map(link =>
-              <ItemLink link={link} shortName='true'/>
+            {links && links.map((link, key) =>
+              <ItemLink key={key} link={link} shortName='true'/>
             )}
           </Grid>
         </Grid>

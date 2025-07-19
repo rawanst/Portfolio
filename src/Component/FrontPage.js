@@ -68,7 +68,7 @@ const FrontPage = ({
           isHomePage && 
           links && 
           links.map(link => 
-            <ItemLink link={link}/>
+            <ItemLink key={link.id} link={link}/>
           )
         }
       </Container>
