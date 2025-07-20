@@ -70,23 +70,23 @@ const Home = () => {
       },
       {
         title:'Projets',
-        routh:'/projets',
+        routh:'/projects',
         summaries:[
           { 
             id: 1, 
-            routh: '/projets', 
+            routh: '/projects', 
             title: 'Projet 1', 
             resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
           },
           { 
             id: 2, 
-            routh: '/projets', 
+            routh: '/projects', 
             title: 'Projet 2', 
             resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
           },
           { 
             id: 3, 
-            routh: '/projets', 
+            routh: '/projects', 
             title: 'Projet 3', 
             resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
 

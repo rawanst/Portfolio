@@ -32,7 +32,7 @@ const Header = (props) => {
     {
       id: 1,
       name: 'Projets',
-      url: '/projets'
+      url: '/projects'
     },
     {
       id: 2,
