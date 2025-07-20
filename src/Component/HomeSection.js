@@ -32,7 +32,7 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
           justifyContent: 'center',
           alignItems: 'center',
           alignContent: 'center',
-          bgcolor: '#823ccbff',
+          bgcolor: '#823ccb',
           borderRadius: '20px',
           paddingTop: '2vh',
           paddingBottom: '2vh',
@@ -97,9 +97,9 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
                 bgcolor:'#c2cf69',
                 fontFamily: "Melodrama",
                 mb:'2vh',
-                color: '#823ccbff',
+                color: '#823ccb',
                 ':hover': {
-                  color: '#e8e3edff'
+                  color: '#e8e3ed'
                 },
               }}
               onClick={

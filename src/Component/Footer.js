@@ -31,7 +31,7 @@ const Footer = () => {
 
   return(
     <Box
-      bgcolor= '#823ccbff'
+      bgcolor= '#823ccb'
       borderRadius= '1em 1em 0 0'
       mt='5vh'
       mb='-10vh'

@@ -21,11 +21,11 @@ const RedirectLink = ({data}) => {
         mb: 1,
         bgcolor: 'rgb(221, 201, 237)',
         cursor: 'pointer',
-        border: '0.2vh solid #823ccbff',
+        border: '0.2vh solid #823ccb',
         borderRadius: '20px',
-        color: '#823ccbff',
+        color: '#823ccb',
         ':hover': {
-          color: '#823ccbff',
+          color: '#823ccb',
           bgcolor: '#b9cb3c',
           border: '0.2vh solid #b9cb3c',
           transitionProperty: 'none'
