@@ -10,11 +10,13 @@ const ItemLink = ({link, shortName}) => {
       variant="outlined" 
       sx={{
         m: 0.5,
-        bgcolor:'#c2cf69',
+        bgcolor: '#c2cf69',
+        textShadow: '0.5px 0.25px #823ccb',
+        border: '1.6px solid #e8e3ed',
         fontFamily: "Melodrama", 
         color: '#823ccb',
         ':hover': { 
-          color: '#e8e3ed'
+          color:'#e8e3ed',
         },
       }}
       onClick={

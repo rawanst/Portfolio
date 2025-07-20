@@ -45,11 +45,11 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
           <Button
             onClick={() => { navigate(routh) }}
             sx={{
-              fontFamily: 'Melodrama-Regular',
+              fontFamily: 'Melodrama',
               fontWeight: '600',
               fontSize: '2.8rem',
-              color: '#c2cf69',
-              textShadow: '1.5px 1px white',
+              color: '#B9CB3C',
+              textShadow: '1.5px 1px #e8e3ed',
               wordWrap: 'break-word',
               textTransform: 'none',
               letterSpacing : '-3px',
@@ -71,7 +71,7 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
                   fontWeight: 'bolder',
                   fontWeight: '600',
                   fontSize: 'x-large',
-                  color: 'rgb(221, 201, 237)',
+                  color: '#e8e3ed',
                 }}
               >
                 {desc}
@@ -94,8 +94,10 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
               size="large"
               sx={{
                 width: '100%',
-                bgcolor:'#c2cf69',
+                bgcolor: '#c2cf69', // '#B9CB3C',
                 fontFamily: "Melodrama",
+                border: '1.6px solid #e8e3ed',
+                textShadow: '0.5px 0.25px #823ccb',
                 mb:'2vh',
                 color: '#823ccb',
                 ':hover': {
