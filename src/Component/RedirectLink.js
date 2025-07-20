@@ -19,15 +19,14 @@ const RedirectLink = ({data}) => {
         p: 3,
         pl: 2,
         mb: 1,
-        bgcolor: 'rgb(221, 201, 237)',
         cursor: 'pointer',
-        border: '0.2vh solid #823ccb',
-        borderRadius: '20px',
         color: '#823ccb',
+        bgcolor: 'rgb(221, 201, 237)',
+        border: '1.6px solid #e8e3ed',
+        borderRadius: '20px',
         ':hover': {
-          color: '#823ccb',
-          bgcolor: '#b9cb3c',
-          border: '0.2vh solid #b9cb3c',
+          color: '#e8e3ed',
+          bgcolor: '#823ccb',
           transitionProperty: 'none'
         },
       }}
@@ -36,7 +35,7 @@ const RedirectLink = ({data}) => {
       <Typography
         variant= 'h4'
         sx={{
-        fontFamily: "Meloriac-Regular",
+        fontFamily: "Meloriac",
         fontWeight: '600',
         wordWrap: 'break-word',
         }}

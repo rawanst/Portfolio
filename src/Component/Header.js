@@ -84,13 +84,13 @@ const Header = (props) => {
                 size= 'large'
                 onClick={() => { navigate(item.url) }}
                 sx={{
-                  color: '#b9cb3c',
+                  color: '#e8e3ed',
                   fontFamily: 'Melodrama-Regular',
                   m: 0.25,
                   letterSpacing : '-1px',
                   ':hover': {
-                    textShadow: '0.5px 0px white',
-                    color: '#e8e3ed',
+                    textShadow: '0.5px 0px #b9cb3c',
+                    color: '#b9cb3c',
                     transitionProperty: 'none'
                   }
                 }}

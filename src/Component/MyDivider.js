@@ -4,7 +4,7 @@ const MyDivider = () => {
   return (
     <Divider
       sx={{
-        bgcolor:'#c2cf69', 
+        bgcolor: '#e8e3ed', 
         opacity: '0.4',
         width: '0.996',
         m: '0',

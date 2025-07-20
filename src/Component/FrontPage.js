@@ -31,9 +31,10 @@ const FrontPage = ({
         <Typography
           variant= 'h2'
           sx={{
-            fontFamily: "Meloriac-Regular",
-            color: '#b9cb3c',
-            textShadow: '1.8px 0px white',
+            fontFamily: "Meloriac",
+            fontWeight: 'bold',
+            color: '#B9CB3C',
+            textShadow: '1.5px 0px #e8e3ed',
             wordWrap: 'break-word',
             paddingTop: '2vh',
           }}
@@ -43,11 +44,11 @@ const FrontPage = ({
         {
           titleDeux && 
           <Typography
-            variant= 'h2'
+            variant= 'h3'
             sx={{
-              fontFamily: 'Melodrama-Light', 
-              color: '#b9cb3c',
-              wordWrap: 'break-word'
+              fontFamily: 'Melodrama',
+              color: '#e8e3ed',
+              wordWrap: 'break-word',
             }}
           >
             {titleDeux}
@@ -58,7 +59,7 @@ const FrontPage = ({
           variant= 'h5'
           sx={{
             fontFamily: "Melodrama-Light", 
-            color: '#c2cf69',
+            color: '#e8e3ed',
             wordWrap: 'break-word'
           }}
         >
