@@ -16,7 +16,7 @@ const FrontPage = ({
 }) => {
   return(
     <Box
-      bgcolor= '#823ccbff'
+      bgcolor= '#823ccb'
       sx={{
         height: {height},
         diplay: 'flex',

@@ -12,9 +12,9 @@ const ItemLink = ({link, shortName}) => {
         m: 0.5,
         bgcolor:'#c2cf69',
         fontFamily: "Melodrama", 
-        color: '#823ccbff',
+        color: '#823ccb',
         ':hover': { 
-          color: '#e8e3edff'
+          color: '#e8e3ed'
         },
       }}
       onClick={

@@ -49,7 +49,7 @@ const Header = (props) => {
         <AppBar
           sx={{
             borderRadius: '0 0 1em 1em',
-            backgroundColor: '#823ccbff',
+            backgroundColor: '#823ccb',
             display:'flex',
             flexDirection:'row',
             justifyContent:'space-between',
@@ -69,7 +69,7 @@ const Header = (props) => {
                 textShadow: '1px 0px white',
                 letterSpacing : '-3px',
                 ':hover': {
-                  color: '#e8e3edff',
+                  color: '#e8e3ed',
                   transitionProperty: 'none'
                 }
               }}
@@ -90,7 +90,7 @@ const Header = (props) => {
                   letterSpacing : '-1px',
                   ':hover': {
                     textShadow: '0.5px 0px white',
-                    color: '#e8e3edff',
+                    color: '#e8e3ed',
                     transitionProperty: 'none'
                   }
                 }}
