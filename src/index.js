@@ -6,11 +6,11 @@ import {
 } from 'react-router-dom'
 import App from './App'
 import Blog from './Pages/Blog'
-import Projets from './Pages/Projets'
 import Article from './Pages/Article'
 import ComingSoon from './Pages/ComingSoon'
 import NotFound from './Pages/NotFound'
 import Home from './Pages/Home'
+import Project from './Pages/Project'
 
 const router = createBrowserRouter([
   {
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/blog", element: <Blog /> },
       { path: "/blog/:id", element: <Article /> },
-      { path: "/projets", element: <Projets /> },
-      { path: "/projets/:id", element: <ComingSoon /> },
+      { path: "/projects", element: <Project /> },
+      { path: "/projects/:id", element: <ComingSoon /> },
       { path: "/*", element: <NotFound /> },
     ],
   },
