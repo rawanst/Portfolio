@@ -5,30 +5,10 @@ import {
   Grid,
 } from "@mui/material"
 import ItemLink from './ItemLink'
+import data from '../data'
 
 const Footer = () => {
-
-  const links = [
-    {
-      id: 1,
-      name: 'LinkedIn',
-      shortName: 'LN',
-      url: 'https://www.linkedin.com/in/rawan-t-5ba1bb170/'
-    },
-    {
-      id: 2,
-      name: 'GitHub',
-      shortName: 'GH',
-      url: 'https://github.com/rawanst'
-    },
-    {
-      id: 3,
-      name: 'rawantabaja12@gmail.com',
-      shortName: '@',
-      url: 'mailto:rawantabaja12@gmail.com?cc=&body=Bonjour Rawan,'
-    },
-  ]
-
+  
   return(
     <Box
       bgcolor= '#823ccb'
@@ -77,7 +57,7 @@ const Footer = () => {
 
             }}
           >
-            {links && links.map((link, key) =>
+            {data.links && data.links.map((link, key) =>
               <ItemLink key={key} link={link} shortName='true'/>
             )}
           </Grid>

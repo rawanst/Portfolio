@@ -4,26 +4,14 @@ import {
 } from '@mui/material'
 import FrontPage from '../Component/FrontPage'
 import RedirectLink from '../Component/RedirectLink'
+import data from '../data'
 
 const Blog = () => {
 
   window.scrollTo(0, 0)
   
-  const articles = [
-          { 
-            id: 1, 
-            routh: '/blog', 
-            title: 'React server composant', 
-            resume: "Réinventez vos applications web avec les composants serveur React : performance, rapidité et efficacité au cœur de Next.js !"
-          },
-          { 
-            id: 2, 
-            routh: '/blog', 
-            title: 'Advent of code', 
-            resume: "Plongez dans l’Advent of Code, le défi ultime des développeurs pour allier logique, algorithmes et esprit de Noël !"
-          },
-        ]
-
+  let articles = data.blog.summaries
+  
   return(
     <Box>
       <FrontPage 
