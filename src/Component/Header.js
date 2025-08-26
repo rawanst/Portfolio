@@ -7,6 +7,7 @@ import {
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import data from '../data'
 
 function HideOnScroll(props) {
   const { children, window } = props
@@ -27,19 +28,6 @@ HideOnScroll.propTypes = {
 }
 
 const Header = (props) => {
-
-  const menu = [
-    {
-      id: 1,
-      name: 'Projets',
-      url: '/projects'
-    },
-    {
-      id: 2,
-      name: 'Blog',
-      url: '/blog'
-    },
-  ]
 
   const navigate = useNavigate()
 
@@ -78,7 +66,7 @@ const Header = (props) => {
             </Button>
           </Toolbar>
           <Toolbar>
-            {menu.map(item =>
+            {data.menu.map(item =>
               <Button
                 key={item.id}
                 size= 'large'
