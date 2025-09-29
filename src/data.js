@@ -1,3 +1,6 @@
+
+
+
 const data = {
   frontData: {
     title:'Rawan Tabaja',
@@ -78,20 +81,16 @@ const data = {
     summaries:[
       { 
         id: 1, 
+        title: 'Snake Game', 
         routh: '/projects', 
-        title: 'Projet 1', 
-        resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+        link: 'https://snake-game-three-black.vercel.app/',
+        resume: 'Jeu rétro Snake, reconstruit de façon minimaliste avec React et MUI',
       },
       { 
         id: 2, 
-        routh: '/projects', 
-        title: 'Projet 2', 
-        resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-      },
-      { 
-        id: 3, 
-        routh: '/projects', 
-        title: 'Projet 3', 
+        title: 'À venir', 
+        routh: '/projects',
+        link: 'https://rawanst.vercel.app/projects/2',
         resume: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
       },
      ],
