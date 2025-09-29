@@ -8,6 +8,8 @@ const RedirectLink = ({data}) => {
 
   const navigate = useNavigate()
 
+  const showPorject = () => window.open(data.link, '_blank')
+
   return(
     <Grid
       key={data.id}
@@ -30,7 +32,11 @@ const RedirectLink = ({data}) => {
           transitionProperty: 'none'
         },
       }}
-      onClick={() => { navigate(`${data.routh}/${data.id}`) }}
+      onClick={() => { 
+        data.routh === '/projects' ? 
+        window.open(data.link, '_blank') :
+        navigate(`${data.routh}/${data.id}`) 
+      }}
     >
       <Typography
         variant= 'h4'
