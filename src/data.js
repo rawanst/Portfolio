@@ -105,7 +105,10 @@ const data = {
         title: 'React server composant', 
         resume: "Réinventez vos applications web avec les composants serveur React : performance, rapidité et efficacité au cœur de Next.js !",
         date: "2024",
-        contenu: `Les **composants serveur React** marquent une avancée majeure dans le développement web moderne, transformant la manière de concevoir et déployer des applications React.
+        contenu: [
+          {
+            type: 'markdown',
+            data: `Les **composants serveur React** marquent une avancée majeure dans le développement web moderne, transformant la manière de concevoir et déployer des applications React.
 
 Cette innovation, intimement liée à **Next.js**, redéfinit les rôles du client et du serveur, ouvrant de nouvelles perspectives pour optimiser les performances et l'expérience utilisateur.
 Dans cet article, nous allons explorer en profondeur les composants serveur React, clarifier la distinction entre client et serveur, et expliquer comment cette nouveauté s'intègre au **framework Next.js**, qui tire pleinement parti de cette technologie. Nous comparerons également les approches traditionnelles avec les nouvelles possibilités offertes par ces composants, en analysant leur impact sur le rendu, l'interactivité et les performances des applications web.
@@ -115,31 +118,43 @@ Pour bien comprendre les composants serveur React, il est essentiel de saisir la
 Le **client** correspond au navigateur de l'utilisateur (ordinateur, téléphone, etc.). Son rôle est de recevoir et interpréter les fichiers HTML et d'exécuter les fichiers JavaScript pour gérer les interactions utilisateurs.
 Le **serveur**, de son côté, est une machine distante chargée de stocker les données du site (code, images, etc.) et de répondre aux requêtes du client en générant du HTML, CSS et JS. Cette communication constante entre client et serveur est cruciale pour le bon fonctionnement des sites web, et c’est dans cette interaction que les **composants serveur React** entrent en jeu.
 
-(Schéma à venir)
-
-### Les approches traditionnelles : Client-Side Rendering et Server-Side Rendering
+(Schéma à venir)`
+          },
+          {
+            type: 'markdown',
+            data: `### Les approches traditionnelles : Client-Side Rendering et Server-Side Rendering
 Dans le **Client-Side Rendering (CSR)**, lorsque le client accède à un site, il reçoit d'abord un fichier HTML minimal, puis un fichier JS contenant les éléments interactifs. Le client interprète ces fichiers pour afficher la page dans un premier temps en exécutant le fichier HTML. Puis le client va rendre les éléments interactifs grâce au fichier JS. Après une requête supplémentaire est faite pour récupérer les données manquantes.
 
-(Schéma à venir)
+(Schéma à venir)`
+          },
+          {
+            type: 'markdown',
+            data: `Avec **Next.js**, nous utilisons une autre approche : le **Server-Side Rendering (SSR)**. Le serveur génère d'abord un fichier HTML complet, incluant toutes les données nécessaires, avant de l'envoyer au client. Ce dernier reçoit ensuite le fichier JS pour activer les éléments interactifs via une phase appelée **hydratation**, où les éléments HTML et JS sont superposés pour créer une page interactive.
 
-Avec **Next.js**, nous utilisons une autre approche : le **Server-Side Rendering (SSR)**. Le serveur génère d'abord un fichier HTML complet, incluant toutes les données nécessaires, avant de l'envoyer au client. Ce dernier reçoit ensuite le fichier JS pour activer les éléments interactifs via une phase appelée **hydratation**, où les éléments HTML et JS sont superposés pour créer une page interactive.
+(Schéma à venir)`
+          },
+          {
+            type: 'markdown',
+            data: `L'hydratation, spécifique au SSR, consiste à **associer les composants HTML déjà rendus** avec le code JavaScript côté client, ce qui permet d'ajouter de l'interactivité (comme des boutons cliquables). Elle transforme un rendu statique en une page dynamique en liant les deux versions du DOM (HTML et JS) pour améliorer la réactivité de l'application.
 
-(Schéma à venir)
-
-L'hydratation, spécifique au SSR, consiste à **associer les composants HTML déjà rendus** avec le code JavaScript côté client, ce qui permet d'ajouter de l'interactivité (comme des boutons cliquables). Elle transforme un rendu statique en une page dynamique en liant les deux versions du DOM (HTML et JS) pour améliorer la réactivité de l'application.
-
-(Schéma à venir)
-
-### Les composants serveur React et Next.js
+(Schéma à venir)`
+          },
+          {
+            type: 'markdown',
+            data: `### Les composants serveur React et Next.js
 
 Avec les **React Server Components**, la procédure est similaire au SSR, mais avec une différence notable : le **fichier JS** reçu par le client ne contient plus **tous les éléments de la page**. Seuls les éléments interactifs sont inclus, ce qui rend le fichier JS plus léger et accélère la phase d'hydratation. Même sur des petits projets, ce gain de performance est significatif, démontrant l’efficacité des composants serveur.
 
-(Schéma à venir)
-
-### Pour conclure
+(Schéma à venir)`
+          },
+          {
+            type: 'markdown',
+            data: `### Pour conclure
 
 Les **composants serveur React** révolutionnent le développement web moderne en optimisant la gestion des ressources et en améliorant les performances. Grâce à **Next.js**, cette technologie permet de réduire la taille des fichiers JS envoyés au client et d’accélérer le temps de chargement des applications, offrant ainsi une expérience utilisateur plus fluide et réactive. L’adoption croissante des composants serveur promet de façonner l’avenir des applications web dynamiques.
-Dans un prochain article, nous explorerons en détail leur implémentation pratique et les meilleures pratiques de codage pour profiter pleinement de cette innovation. Restez à l’écoute !`,
+Dans un prochain article, nous explorerons en détail leur implémentation pratique et les meilleures pratiques de codage pour profiter pleinement de cette innovation. Restez à l’écoute !`
+          },
+        ],
       },
       { 
         id: 2, 
@@ -147,7 +162,10 @@ Dans un prochain article, nous explorerons en détail leur implémentation prati
         title: 'Advent of code', 
         resume: "Plongez dans l’Advent of Code, le défi ultime des développeurs pour allier logique, algorithmes et esprit de Noël !",
         date: "12/2022",
-        contenu:`Cette année pour bien préparer Noël, j'ai découvert le fameux calendrier de l'avant pour les développeurs : Advent of Code.
+        contenu:[
+          {
+            type: 'markdown',
+            data: `Cette année pour bien préparer Noël, j'ai découvert le fameux calendrier de l'avant pour les développeurs : Advent of Code.
 
 Cet évènement de programmation annuel a été créer par Eric Wastl pour tout développeurs et langages. De jours en jours les défis se complexifient, cependant, il est important de noter que ces défis sont conçus pour être difficiles et peuvent prendre beaucoup de temps et d'efforts pour les résoudre. Il est donc important de ne pas être trop dur envers soi-même si vous avez du mal à trouver une solution.
 
@@ -158,33 +176,71 @@ Pour vous parler plus en détail de cet événement nous allons ensemble faire l
 
 Pour ce défi, les Elfes se préparent à partir en expédition pour aller collecter la nourriture des rênes, les fruits d’étoiles . Les fournitures nécessaires sont stockées dans des caisses sur plusieurs piles. Un grutier est affecté à l’organiser ces caisses, selon les fournitures nécessaires elle réarrangera les caisses aux dessus des piles. Ces réarrangements sont prédéfinis en plusieurs étapes. Cependant les elfes aimeraient savoir quels caisses se retrouveront au sommet des piles mais ne veulent pas déranger le grutier pendant son travail. Ainsi ils nous demandes de leurs programmer une méthode leurs permettant de répondre cette question.
 
-Pour cela on nous fournis le schéma d’organisation initiale des caisses ainsi que les étapes que le grutier va suivre :
-
-(Schéma à venir)
-
-Pour le schéma d’organisation initiale des caisses, nous trouvons dans la pile numéro [1] la caisse [Z] puis au dessus d’elle la caisse [N]. Dans la pile numéro [2] nous trouvons la caisse [M] par terre, la caisse [C] au dessus et la caisse [D] au sommet. Et dans la pile numéro [3] nous avons la caisse [P].
+Pour cela on nous fournis le schéma d’organisation initiale des caisses ainsi que les étapes que le grutier va suivre :`
+          },
+          {
+            type: 'img',
+            width: "1920",
+            height: "1080",
+            src: '../../public/articles/2/1.png'
+          },
+          {
+            type: 'markdown',
+            data: `Pour le schéma d’organisation initiale des caisses, nous trouvons dans la pile numéro [1] la caisse [Z] puis au dessus d’elle la caisse [N]. Dans la pile numéro [2] nous trouvons la caisse [M] par terre, la caisse [C] au dessus et la caisse [D] au sommet. Et dans la pile numéro [3] nous avons la caisse [P].
 
 Concernant les instructions , le grutier va d’abord déplacer une caisse de la pile numéro 2 pour la mettre dans la pile numéro 1, et ainsi de suite …
 
-Après les instructions finis nous arrivons au schéma ci-dessous, nous devrons donc retourner **CMZ** comme réponse aux Elfes.
+Après les instructions finis nous arrivons au schéma ci-dessous, nous devrons donc retourner **CMZ** comme réponse aux Elfes.`
+          },
+          {
+            type: 'img',
+            width: "1920",
+            height: "1080",
+            src: '../../public/articles/2/2.png'
+          },
+          {
+            type: 'markdown',
+            data: `Pour commencer nous avons besoin transformer ces données en différents tableaux bien structurés.  Nous allons créer un tableaux contenant notre schéma et un autre contenant les instructions.
 
-(Schéma à venir)
-
-Pour commencer nous avons besoin transformer ces données en différents tableaux bien structurés.  Nous allons créer un tableaux contenant notre schéma et un autre contenant les instructions.
-
-La première grand étape va être de transformer notre variable input en deux tableaux intelligemment structuré. Voici mon idée :
-
-(Schéma à venir)
-
-Une fois cela fait nous allons pourvoir parcourir le tableau procédure pour affecter ces modifications au tableau puzzle.
-
-(Schéma à venir)
-
-Nous nous retrouvons enfin dans le schéma schéma ci-dessous. Tout ce qu’il nous manque à faire c’est de créer une boucle pour chaque pile dans puzzle récupérez la pile au dessus. Nous obtenons bien donc CMZ
-
-(Schéma à venir)
-
-Les elfes sont heureux ils peuvent enfin savoir à quelles caisses ils peuvent avoir accès sans déranger personne. Et nous aussi on est heureux d’avoir fini notre défi !`,
+La première grand étape va être de transformer notre variable input en deux tableaux intelligemment structuré. Voici mon idée :`
+          },
+          {
+            type: 'img',
+            width: "1920",
+            height: "1080",
+            src: '../../public/articles/2/3.png'
+          },
+          {
+            type: 'markdown',
+            data: `Une fois cela fait nous allons pourvoir parcourir le tableau procédure pour affecter ces modifications au tableau puzzle.`
+          },
+          {
+            type: 'img',
+            width: "1920",
+            height: "1080",
+            src: '../../public/articles/2/4.png'
+          },
+          {
+            type: 'img',
+            width: "1920",
+            height: "1080",
+            src: '../../public/articles/2/5.png'
+          },
+          {
+            type: 'markdown',
+            data: `Nous nous retrouvons enfin dans le schéma schéma ci-dessous. Tout ce qu’il nous manque à faire c’est de créer une boucle pour chaque pile dans puzzle récupérez la pile au dessus. Nous obtenons bien donc CMZ`
+          },
+          {
+            type: 'img',
+            width: "1920",
+            height: "1080",
+            src: '../../public/articles/2/6.png'
+          },
+          {
+            type: 'markdown',
+            data: `Les elfes sont heureux ils peuvent enfin savoir à quelles caisses ils peuvent avoir accès sans déranger personne. Et nous aussi on est heureux d’avoir fini notre défi !`
+          },
+        ]
       },
     ],
   }

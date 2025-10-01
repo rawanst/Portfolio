@@ -35,9 +35,13 @@ const Article = () => {
           fontFamily: "Melodrama", 
         }}
       >
-        <ReactMarkdown>
-          {article.contenu}
-        </ReactMarkdown>
+        {article.contenu.map((item, index) => {
+          if(item.type === 'markdown'){
+            return <ReactMarkdown key={index}>{item.data}</ReactMarkdown>
+          } else if (item.type === 'img'){
+            return <img key={index} width={item.width} height={item.height} alt="image" src={item.src} />
+          }
+        })}
       </Container>
     </Box>
   )
