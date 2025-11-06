@@ -10,7 +10,6 @@ const NotFound = () => {
   return(
     <Box>
       <FrontPage 
-        height='55vh'
         title='Not Found'
         content="Cette page n'existe pas"
       />
