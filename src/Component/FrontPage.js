@@ -18,7 +18,7 @@ const FrontPage = ({
   return(
     <Box
       sx={{
-        height: {height},
+        height: '90vh',
         diplay: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',

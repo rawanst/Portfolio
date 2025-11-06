@@ -9,7 +9,6 @@ const Home = () => {
   return(
     <>
       <FrontPage
-        height='90vh'
         title={data.frontData.title}
         titleDeux={data.frontData.titleDeux}
         content={data.frontData.content}

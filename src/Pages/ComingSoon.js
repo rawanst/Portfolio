@@ -10,7 +10,6 @@ const ComingSoon = () => {
   return(
     <Box>
       <FrontPage 
-        height='55vh'
         title='Coming Soon'
       />
       <Box 

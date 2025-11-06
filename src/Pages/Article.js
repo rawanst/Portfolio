@@ -23,7 +23,6 @@ const Article = () => {
   return(
     <Box>
       <FrontPage 
-        height='55vh'
         title={article.title}
         content={article.resume}
       />

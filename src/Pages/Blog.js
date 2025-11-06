@@ -15,14 +15,13 @@ const Blog = () => {
   return(
     <Box>
       <FrontPage 
-        height='55vh'
         title='Blog'
         content='Passionné par la tech, je transforme les défis en solutions innovantes. Découvrez mon parcours et mes réalisations.'
         sx={{
           paddingBottom: '10vh'
         }}
       />
-      <Container sx={{p: '2.5%', pb: '0'}}>
+      <Container sx={{p: '5vh', pb: '0'}}>
         {articles.map((item, id) => (
           <RedirectLink key={id} data={item} />
         ))}

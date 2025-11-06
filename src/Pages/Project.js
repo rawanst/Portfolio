@@ -13,11 +13,10 @@ const Project = () => {
   return(
     <Box>
       <FrontPage 
-        height='55vh'
         title='Projets'
         content='Passionné par la tech, je transforme les défis en solutions innovantes. Découvrez mon parcours et mes réalisations.'
       />
-      <Container sx={{p: '2.5%', pb: '0'}}>
+      <Container sx={{p: '5vh', pb: '0'}}>
         {data.projets.summaries.map((item) => (
           <RedirectLink key={item.id} data={item} />
         ))}
