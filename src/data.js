@@ -4,8 +4,8 @@
 const data = {
   frontData: {
     title:'Rawan Tabaja',
-    titleDeux:'Développeuse Full-Stack',
-    content:'Passionné par la tech, je transforme les défis en solutions innovantes. Découvrez mon parcours et mes réalisations.',
+    titleDeux:'Développeuse Full Stack',
+    content:'Passionné par la tech, je transforme les défis en solutions innovantes. Découvrez mon parcours et mes réalisations !',
   },
   menu: [
     {
@@ -22,15 +22,15 @@ const data = {
   links: [
     {
       id: 1,
-      name: 'LinkedIn',
-      shortName: 'LN',
-      url: 'https://www.linkedin.com/in/rawan-t-5ba1bb170/'
-    },
-    {
-      id: 2,
       name: 'GitHub',
       shortName: 'GH',
       url: 'https://github.com/rawanst'
+    },
+    {
+      id: 2,
+      name: 'Linked In',
+      shortName: 'LN',
+      url: 'https://www.linkedin.com/in/rawan-t-5ba1bb170/'
     },
     {
       id: 3,
