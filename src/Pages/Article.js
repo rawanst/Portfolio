@@ -14,8 +14,8 @@ const Article = () => {
   const { id } = useParams()
 
   let article = null
-  data.blog.summaries.map(a => {
-    if(a.id === parseInt(id)){
+  data.blog.summaries.forEach((a) => {
+    if(a.id === Number.parseInt(id)){
       article = a
     }
   })
@@ -35,9 +35,11 @@ const Article = () => {
           fontFamily: "Melodrama", 
         }}
       >
-        <ReactMarkdown>
-          {article.contenu}
-        </ReactMarkdown>
+        {article.contenu.map(item => {
+          console.log(item)
+          if( item.type === 'markdown' ){ return <ReactMarkdown key={item.order}>{item.data}</ReactMarkdown> }
+          return <img key={item.order} src={item.src} height={item.height} width={item.width} />
+        })}
       </Container>
     </Box>
   )
