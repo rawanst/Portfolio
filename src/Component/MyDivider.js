@@ -9,7 +9,7 @@ const MyDivider = () => {
         width: '0.996',
         m: '0',
         mb: '1vh',
-        mt: '-0.2%',
+        mt: '0.5vh',
         height: '1px',
       }}
     />

@@ -12,7 +12,7 @@ const ItemLink = ({link, shortName}) => {
         m: 0.5,
         bgcolor: '#c2cf69',
         textShadow: '0.5px 0.25px #823ccb',
-        border: '1.6px solid #e8e3ed',
+        border: '1.6px solid #c7cf91ff',
         fontFamily: "Melodrama", 
         color: '#823ccb',
         ':hover': { 
