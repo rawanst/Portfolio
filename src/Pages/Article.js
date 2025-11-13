@@ -27,11 +27,15 @@ const Article = () => {
         content={article.resume}
       />
       <Container
-        maxWidth="lg"
         sx={{
-          p:'5vh',
+          width: '80%',
+          my:'5vh',
+          mx: '10%',
           color: '#59288a',
           fontFamily: "Melodrama", 
+          border: '1px solid #59288a',
+          bgcolor: 'white',
+          borderRadius: '0.7em 0.7em 0.7em 0.7em',
         }}
       >
         <ReactMarkdown>
