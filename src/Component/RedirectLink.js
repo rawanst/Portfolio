@@ -22,13 +22,13 @@ const RedirectLink = ({data}) => {
         pl: 2,
         mb: 1,
         cursor: 'pointer',
-        color: '#823ccb',
+        color: '#5e2d94ff',
         bgcolor: 'rgb(221, 201, 237)',
         border: '1.6px solid #e8e3ed',
-        borderRadius: '20px',
+        borderRadius: '0.7em',
         ':hover': {
           color: '#e8e3ed',
-          bgcolor: '#823ccb',
+          bgcolor: '#5e2d94ff',
           transitionProperty: 'none'
         },
       }}

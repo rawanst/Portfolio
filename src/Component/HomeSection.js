@@ -32,8 +32,8 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
           justifyContent: 'center',
           alignItems: 'center',
           alignContent: 'center',
-          bgcolor: '#823ccb',
-          borderRadius: '20px',
+          bgcolor: '#5e2d94ff',
+          borderRadius: '0.7em',
           paddingTop: '2vh',
           paddingBottom: '2vh',
         }}
@@ -48,8 +48,8 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
               fontFamily: 'Melodrama',
               fontWeight: '600',
               fontSize: '2.8rem',
-              color: '#B9CB3C',
-              textShadow: '1.5px 1px #e8e3ed',
+              color: '#D5DC7B',
+              textShadow: '1.5px 0.20px 0.5px #D5DC7B',
               wordWrap: 'break-word',
               textTransform: 'none',
               letterSpacing : '-3px',
@@ -94,12 +94,13 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
               size="large"
               sx={{
                 width: '100%',
-                bgcolor: '#c2cf69', // '#B9CB3C',
+                bgcolor: '#D5DC7B', // '#B9CB3C',
                 fontFamily: "Melodrama",
-                border: '1.6px solid #e8e3ed',
-                textShadow: '0.5px 0.25px #823ccb',
+                borderRadius: '0.7em',
+                // border: '1.6px solid #e8e3ed',
+                textShadow: '0.5px 0.25px #5e2d94ff',
                 mb:'2vh',
-                color: '#823ccb',
+                color: '#5e2d94ff',
                 ':hover': {
                   color: '#e8e3ed'
                 },
