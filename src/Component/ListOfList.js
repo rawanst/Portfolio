@@ -35,7 +35,7 @@ const ListOfList = ({data}) => {
           <Typography
             variant= 'h9'
             sx={{
-              fontFamily: "Meloriac",
+              fontFamily: 'Meloriac',
               fontWeight: '600',
               textShadow: '0.4px 0px #b9cb3c',
               color: '#b9cb3c',
@@ -49,7 +49,7 @@ const ListOfList = ({data}) => {
               key={x.id}
               variant= 'p'
               sx={{
-                fontFamily: "Melodrama",
+                fontFamily: 'Meloriac',
                 color: '#e8e3ed',
                 wordWrap: 'break-word',
               }}

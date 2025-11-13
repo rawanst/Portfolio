@@ -1,3 +1,6 @@
+import {
+  Box,
+} from '@mui/material'
 import FrontPage from '../Component/FrontPage'
 import HomeSection from '../Component/HomeSection'
 import data from '../data.js'
@@ -7,7 +10,11 @@ const Home = () => {
   window.scrollTo(0, 0)
 
   return(
-    <>
+    <Box 
+      sx={{ 
+        paddingBottom: '5vh' 
+      }}
+    >
       <FrontPage
         title={data.frontData.title}
         titleDeux={data.frontData.titleDeux}
@@ -15,6 +22,7 @@ const Home = () => {
         isHomePage={1}
         links={data.links}
       />
+     
       <HomeSection
         title={data.aPropos.title}
         routh={data.aPropos.routh}
@@ -32,7 +40,7 @@ const Home = () => {
         routh={data.blog.routh}
         summaries={data.blog.summaries}
       />
-    </>
+    </Box>
   )
 }
 

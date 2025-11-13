@@ -32,63 +32,65 @@ const Header = (props) => {
   const navigate = useNavigate()
 
   return(
-    <>
-      <HideOnScroll {...props}>
-        <AppBar
+    <HideOnScroll {...props}>
+      <AppBar
+        sx={{
+          borderRadius: '0.7em 0.7em 0.7em 0.7em',
+          width: '90%',
+          marginRight: '5%',
+          marginTop: '2vh',
+          backgroundColor: '#5e2d94ff',
+          display:'flex',
+          flexDirection:'row',
+          justifyContent:'space-between',
+          alignItems:'center',
+          boxShadow: '0 0 50px #9A8FBF',
+        }}
+      >
+        <Button
+          size='large'
+          onClick={() => { navigate('/') }}
           sx={{
-            borderRadius: '0 0 1em 1em',
-            backgroundColor: '#823ccb',
-            display:'flex',
-            flexDirection:'row',
-            justifyContent:'space-between',
-            alignItems:'center',
+            padding: 0,
+            fontFamily: 'Melodrama-Regular',
+            fontWeight: 'bolder',
+            color: '#D5DC7B',
+            fontSize: '1.8rem',
+            textTransform: 'none',
+            letterSpacing : '-3px',
+            ':hover': {
+              textShadow: '0.5px 0px 1px #b9cb3c',
+              color: '#b9cb3c',
+              transitionProperty: 'none'
+            }
           }}
         >
-          <Toolbar>
+          RT
+        </Button>
+        <Toolbar>
+          {data.menu.map(item =>
             <Button
-              size='large'
-              onClick={() => { navigate('/') }}
+              key={item.id}
+              size= 'large'
+              onClick={() => { navigate(item.url) }}
               sx={{
+                padding: 0,
+                color: '#d5dc7bff',
+                textShadow: '0.5px 0px 1px #e8e3ed',
                 fontFamily: 'Melodrama-Regular',
-                fontWeight: 'bolder',
-                color: '#b9cb3c',
-                fontSize: '1.8rem',
-                textTransform: 'none',
-                textShadow: '1px 0px white',
-                letterSpacing : '-3px',
+                letterSpacing : '-1px',
                 ':hover': {
-                  color: '#e8e3ed',
+                  textShadow: '0.5px 0px 1px #b9cb3c',
+                  color: '#b9cb3c',
                   transitionProperty: 'none'
                 }
               }}
             >
-              Rawan T.
-            </Button>
-          </Toolbar>
-          <Toolbar>
-            {data.menu.map(item =>
-              <Button
-                key={item.id}
-                size= 'large'
-                onClick={() => { navigate(item.url) }}
-                sx={{
-                  color: '#e8e3ed',
-                  fontFamily: 'Melodrama-Regular',
-                  m: 0.25,
-                  letterSpacing : '-1px',
-                  ':hover': {
-                    textShadow: '0.5px 0px #b9cb3c',
-                    color: '#b9cb3c',
-                    transitionProperty: 'none'
-                  }
-                }}
-              >
-                {item.name}
-              </Button>)}
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
-    </>
+              {item.name}
+            </Button>)}
+        </Toolbar>
+      </AppBar>
+    </HideOnScroll>
   )
 }
 

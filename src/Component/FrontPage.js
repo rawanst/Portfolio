@@ -19,6 +19,8 @@ const FrontPage = ({
     <Box
       sx={{
         height: '90vh',
+        width: '99.98%',
+        marginTop: '-5vh',
         diplay: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
@@ -31,10 +33,10 @@ const FrontPage = ({
         <Typography
           variant= 'h2'
           sx={{
-            fontFamily: "Meloriac",
+            fontFamily: 'Meloriac',
             fontWeight: 'bold',
-            color: '#B9CB3C',
-            textShadow: '1.5px 0px #e8e3ed',
+            color: '#b9cb3c',
+            textShadow: '1.5px 0.20px 0.5px #D5DC7B',
             wordWrap: 'break-word',
             paddingTop: '2vh',
           }}
@@ -47,7 +49,7 @@ const FrontPage = ({
             variant= 'h3'
             sx={{
               fontFamily: 'Melodrama',
-              color: '#e8e3ed',
+              color: '#D5DC7B',
               wordWrap: 'break-word',
             }}
           >
@@ -58,8 +60,8 @@ const FrontPage = ({
         <Typography
           variant= 'h5'
           sx={{
-            fontFamily: "Melodrama-Light",
-            color: '#e8e3ed',
+            fontFamily: 'Melodrama-Light',
+            color: '#D4D994',
             wordWrap: 'break-word'
           }}
         >
@@ -77,7 +79,7 @@ const FrontPage = ({
         style={{
           position: 'absolute',
           top: '0',
-          width: '100%',
+          width: '99.98%',
           height: '90vh',
           zIndex: '-100'
         }}

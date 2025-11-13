@@ -2,7 +2,7 @@ import {
   Grid,
   Typography,
 } from '@mui/material'
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
 const RedirectLink = ({data}) => {
 
@@ -22,13 +22,13 @@ const RedirectLink = ({data}) => {
         pl: 2,
         mb: 1,
         cursor: 'pointer',
-        color: '#823ccb',
+        color: '#5e2d94ff',
         bgcolor: 'rgb(221, 201, 237)',
         border: '1.6px solid #e8e3ed',
-        borderRadius: '20px',
+        borderRadius: '0.7em',
         ':hover': {
           color: '#e8e3ed',
-          bgcolor: '#823ccb',
+          bgcolor: '#5e2d94ff',
           transitionProperty: 'none'
         },
       }}
@@ -41,7 +41,7 @@ const RedirectLink = ({data}) => {
       <Typography
         variant= 'h4'
         sx={{
-        fontFamily: "Meloriac",
+        fontFamily: 'Meloriac',
         fontWeight: '600',
         wordWrap: 'break-word',
         }}
@@ -51,7 +51,7 @@ const RedirectLink = ({data}) => {
       <Typography 
         variant= 'p'
         sx={{
-          fontFamily: "Melodrama-Light", 
+          fontFamily: 'Melodrama-Light', 
           wordWrap: 'break-word'
         }}
       >
