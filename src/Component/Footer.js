@@ -3,7 +3,7 @@ import {
   Container,
   Typography,
   Grid,
-} from "@mui/material"
+} from '@mui/material'
 import ItemLink from './ItemLink'
 import data from '../data'
 
@@ -11,9 +11,8 @@ const Footer = () => {
   
   return(
     <Box
-      bgcolor= '#823ccb'
-      borderRadius= '1em 1em 0 0'
-      mt='5vh'
+      bgcolor= '#5e2d94ff'
+      borderRadius= '0.7em 0.7em 0 0'
       mb='-10vh'
     >
       <Container>
@@ -38,7 +37,7 @@ const Footer = () => {
             <Typography
               variant= 'p'
               sx={{
-                fontFamily: "Meloriac-Regular",
+                fontFamily: 'Meloriac-Regular',
                 fontWeight: '400',
                 color: '#b9cb3c',
               }}
@@ -57,9 +56,12 @@ const Footer = () => {
 
             }}
           >
-            {data.links && data.links.map((link, key) =>
-              <ItemLink key={key} link={link} shortName='true'/>
-            )}
+            {
+              data.links && 
+              data.links.map((link, key) =>
+                <ItemLink key={key} link={link} shortName='true'/>
+              )
+            }
           </Grid>
         </Grid>
       </Container>
