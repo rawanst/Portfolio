@@ -67,7 +67,7 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
               <Typography
                 variant= 'p'
                 sx={{
-                  fontFamily: "Melodrama-Light",
+                  fontFamily: 'Melodrama-Light',
                   fontWeight: 'bolder',
                   fontWeight: '600',
                   fontSize: 'x-large',
@@ -90,12 +90,12 @@ const HomeSection = ({title, routh, desc, listOfList, isCV, summaries}) => {
                 color: 'rgb(171, 155, 185)',
                 marginLeft: '9'
               }}/>}
-              variant="outlined"
-              size="large"
+              variant='outlined'
+              size='large'
               sx={{
                 width: '100%',
                 bgcolor: '#D5DC7B', // '#B9CB3C',
-                fontFamily: "Melodrama",
+                fontFamily: 'Melodrama',
                 borderRadius: '0.7em',
                 // border: '1.6px solid #e8e3ed',
                 textShadow: '0.5px 0.25px #5e2d94ff',

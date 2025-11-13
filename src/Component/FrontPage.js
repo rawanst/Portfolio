@@ -33,7 +33,7 @@ const FrontPage = ({
         <Typography
           variant= 'h2'
           sx={{
-            fontFamily: "Meloriac",
+            fontFamily: 'Meloriac',
             fontWeight: 'bold',
             color: '#b9cb3c',
             textShadow: '1.5px 0.20px 0.5px #D5DC7B',
@@ -60,7 +60,7 @@ const FrontPage = ({
         <Typography
           variant= 'h5'
           sx={{
-            fontFamily: "Melodrama-Light",
+            fontFamily: 'Melodrama-Light',
             color: '#D4D994',
             wordWrap: 'break-word'
           }}

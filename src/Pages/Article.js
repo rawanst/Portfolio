@@ -32,7 +32,7 @@ const Article = () => {
           my:'5vh',
           mx: '10%',
           color: '#59288a',
-          fontFamily: "Melodrama", 
+          fontFamily: 'Melodrama', 
           border: '1px solid #59288a',
           bgcolor: 'white',
           borderRadius: '0.7em 0.7em 0.7em 0.7em',

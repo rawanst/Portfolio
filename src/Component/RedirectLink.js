@@ -2,7 +2,7 @@ import {
   Grid,
   Typography,
 } from '@mui/material'
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
 const RedirectLink = ({data}) => {
 
@@ -41,7 +41,7 @@ const RedirectLink = ({data}) => {
       <Typography
         variant= 'h4'
         sx={{
-        fontFamily: "Meloriac",
+        fontFamily: 'Meloriac',
         fontWeight: '600',
         wordWrap: 'break-word',
         }}
@@ -51,7 +51,7 @@ const RedirectLink = ({data}) => {
       <Typography 
         variant= 'p'
         sx={{
-          fontFamily: "Melodrama-Light", 
+          fontFamily: 'Melodrama-Light', 
           wordWrap: 'break-word'
         }}
       >
